@@ -3,7 +3,7 @@
 
 ## Пример предсказания
 
-![Overlay Sample](outputs/examples/sample_1.png)
+![Overlay Sample](outputs/sample_4.png)
 
 ## Описание проекта
 Проект реализует семантическую сегментацию животных на изображениях из датасета [Oxford-IIIT Pets](https://www.robots.ox.ac.uk/~vgg/data/pets/).  
