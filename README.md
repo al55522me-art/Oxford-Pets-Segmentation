@@ -8,7 +8,7 @@ The **U-Net** model is trained to separate animals (cats and dogs) from the back
 
 | Overlay | Project Description |
 |-----|------------|
-| ![Segmentation Demo](outputs/segmentation_demo.gif) | This project implements **multi-class semantic segmentation** of animals from the Oxford-IIIT Pets dataset.<br><br>**Project Goals:**<br><br>- Learn and apply the U-Net architecture for multi-class segmentation.<br>- Gain hands-on experience working with images and masks.<br>- Visualize model predictions with overlays 
+| ![Segmentation Demo](outputs/segmentation_demo1.gif) | This project implements **multi-class semantic segmentation** of animals from the Oxford-IIIT Pets dataset.<br><br>**Project Goals:**<br><br>- Learn and apply the U-Net architecture for multi-class segmentation.<br>- Gain hands-on experience working with images and masks.<br>- Visualize model predictions with overlays 
  
 **Metrics**
 - Validation Dice Score: ~ 0.89
