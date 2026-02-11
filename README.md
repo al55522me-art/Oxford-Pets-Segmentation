@@ -8,7 +8,7 @@
 
 | Example | Project Description |
 |-----|------------|
-| ![Segmentation Demo](outputs/segmentation_demo1.gif) | This project implements **multi-class semantic segmentation** of animals from the Oxford-IIIT Pets dataset.<br>**Goals:**<br>- Learn and apply the U-Net architecture for multi-class segmentation.<br>- Gain hands-on experience working with images and masks.<br>- Visualize model predictions with overlays 
+| ![Segmentation Demo](outputs/segmentation_demo1.gif) | This project implements **multi-class semantic segmentation** of animals from the Oxford-IIIT Pets dataset.<br><br><br>**Goals:**<br><br><br>- Learn and apply the U-Net architecture for multi-class segmentation.<br>- Gain hands-on experience working with images and masks.<br>- Visualize model predictions with overlays 
  
 
 
