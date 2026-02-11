@@ -19,7 +19,7 @@
 - Валидирующий Dice Score: ~0.94
 
 **Ссылка на модель**
-- https://drive.google.com/file/d/1RzD1GAVq9mhXxRPkIFX-KoS4YMvOGdpt/view?usp=share_link
+- https://drive.google.com/file/d/1xhuBg5zvdtYcTmorcI9HSFXmFLkBvpTC/view?usp=share_link
 
 ## Пример использования
 
