@@ -6,11 +6,9 @@
 
 ![Overlay Sample](outputs/prediction.png)
 
-## Project Description
-
-| GIF | Description |
+| Example | Project Description |
 |-----|------------|
-| ![Segmentation Demo](outputs/segmentation_demo1.gif) | This project implements **multi-class semantic segmentation** of animals from the Oxford-IIIT Pets dataset.<br>**Goals:**<br>- Learn and apply U-Net architecture<br>- Work with images and masks<br>- Visualize predictions with overlays and GIF |
+| ![Segmentation Demo](outputs/segmentation_demo1.gif) | This project implements **multi-class semantic segmentation** of animals from the Oxford-IIIT Pets dataset.<br>**Goals:**<br>- Learn and apply the U-Net architecture for multi-class segmentation.<br>- Gain hands-on experience working with images and masks.<br>- Visualize model predictions with overlays 
  
 
 
