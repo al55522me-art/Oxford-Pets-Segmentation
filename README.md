@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ## Пример предсказания
 
-![Overlay Sample](prediction.png)
+![Overlay Sample](outputs/prediction.png)
 
 ## Описание проекта
 Проект реализует семантическую сегментацию животных на изображениях из датасета [Oxford-IIIT Pets](https://www.robots.ox.ac.uk/~vgg/data/pets/).  
