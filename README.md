@@ -1,7 +1,7 @@
-# Oxford-Pets-Segmentation
-Проект реализует семантическую сегментацию животных на изображениях из датасета Oxford-IIIT Pets. Модель U-Net обучается отделять животное от фона, используя аннотации масок.
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+**Multi-Class Semantic Segmentation of Animals using U-Net**
+
+This project implements semantic segmentation of animals in images from the [Oxford-IIIT Pets Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/).  
+The **U-Net** model is trained to separate animals (cats and dogs) from the background using annotated masks.
 ## Prediction example
 
 ![Overlay Sample](outputs/prediction.png)
