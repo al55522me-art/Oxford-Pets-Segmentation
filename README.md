@@ -6,39 +6,44 @@
 
 ![Overlay Sample](outputs/prediction.png)
 
-## Описание проекта
-Проект реализует семантическую сегментацию животных на изображениях из датасета [Oxford-IIIT Pets](https://www.robots.ox.ac.uk/~vgg/data/pets/).  
-Модель **U-Net** обучается отделять животное от фона, используя аннотации масок.  
+## Project Description
 
-**Цели проекта**
-- Изучение и применение архитектуры U-Net для семантической сегментации.  
-- Практика работы с изображениями и масками.  
-- Визуализация предсказаний модели и сохранение overlay изображений.  
+![Segmentation Demo](outputs/segmentation_demo.gif)
 
-**Метрики**
-- Валидирующий Dice Score: ~0.94
+This project implements multi-class semantic segmentation of animals from the Oxford-IIIT Pets dataset.
+The U-Net model is trained to distinguish between background, cats, and dogs using annotated masks.
+[Oxford-IIIT Pets](https://www.robots.ox.ac.uk/~vgg/data/pets/).  
 
-**Ссылка на модель**
+
+**Project Goals**
+- Learn and apply the U-Net architecture for multi-class segmentation.
+- Gain hands-on experience working with images and masks.
+- Visualize model predictions with overlays 
+
+**Metrics**
+- Validation Dice Score: ~ 0.89
+
+**Model Download**
 - https://drive.google.com/file/d/1xhuBg5zvdtYcTmorcI9HSFXmFLkBvpTC/view?usp=share_link
 
-## Пример использования
+## Visualization Demo
 
 ```python
-from src.dataset import OxfordPetsDataset
-from src.model import UNet
-from src.visualize import visualize_predictions
+from src.dataset import OxfordPetsMultiClassDataset
+from src.model import UNetMultiClass
+from src.visualize import visualize_predictions_multiclass
 import torch
 
-# Настройка устройства
+# Setup device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Загружаем модель
-model = UNet().to(device)
-checkpoint = torch.load("outputs/best_model.pth", map_location=device)
+# Load the model
+model = UNetMultiClass(n_channels=3, n_classes=3).to(device)
+checkpoint = torch.load("outputs/best_model_multiclass.pth", map_location=device)
 model.load_state_dict(checkpoint["model_state_dict"])
 
-# Загружаем датасет
-dataset = OxfordPetsDataset(root="oxford_pets")
+# Load the dataset
+dataset = OxfordPetsMultiClassDataset(root="oxford_pets")
 
-# Визуализируем 5 примеров предсказаний
-visualize_predictions(model, dataset, device, num_samples=5)
+# Visualize 5 sample predictions
+visualize_predictions_multiclass(model, dataset, device, num_samples=5)
