@@ -58,37 +58,3 @@ def validate(model, loader, device, criterion, n_classes=3):
             total_dice += dice_score_multiclass(preds, masks, n_classes).item()
 
     return total_loss / len(loader), total_dice / len(loader)
-
-num_epochs = 50
-best_val_dice = 0.0
-SAVE_PATH = "/kaggle/working/best_model_multiclass.pth"
-
-for epoch in range(num_epochs):
-    train_loss, train_dice = train_one_epoch(
-        model, train_loader, optimizer, device, criterion, n_classes
-    )
-
-    val_loss, val_dice = validate(
-        model, val_loader, device, criterion, n_classes
-    )
-
-    scheduler.step(val_loss)
-
-    # Сохраняем лучшую модель
-    if val_dice > best_val_dice:
-        best_val_dice = val_dice
-
-        torch.save({
-            "epoch": epoch + 1,
-            "model_state_dict": model.state_dict(),
-            "optimizer_state_dict": optimizer.state_dict(),
-            "val_dice": best_val_dice,
-        }, SAVE_PATH)
-
-        print(f"Model saved (epoch {epoch+1}, Val Dice={best_val_dice:.4f})")
-
-    print(
-        f"Epoch [{epoch+1}/{num_epochs}] | "
-        f"Train Loss: {train_loss:.4f} | Train Dice: {train_dice:.4f} | "
-        f"Val Loss: {val_loss:.4f} | Val Dice: {val_dice:.4f}"
-    )
