@@ -37,9 +37,9 @@ def visualize_prediction(model, dataset, device, idx=None):
     plt.savefig("prediction3.png")
     plt.show()
 
-#%%
+
 visualize_prediction(model, val_dataset, device)
-#%%
+
 def visualize_with_overlay(model, dataset, device, idx=None):
     model.eval()
 
