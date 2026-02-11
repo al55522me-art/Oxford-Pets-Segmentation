@@ -8,7 +8,7 @@
 
 ## Project Description
 
-![Segmentation Demo](outputs/segmentation_demo.gif)
+![Segmentation Demo](outputs/segmentation_demo1.gif)
 
 This project implements multi-class semantic segmentation of animals from the Oxford-IIIT Pets dataset.
 The U-Net model is trained to distinguish between background, cats, and dogs using annotated masks.
