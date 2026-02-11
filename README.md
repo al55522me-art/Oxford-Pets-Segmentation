@@ -12,6 +12,7 @@ The **U-Net** model is trained to separate animals (cats and dogs) from the back
 
 **Metrics**
 - Validation Dice Score: ~ 0.89
+- Val Loss: 0.2242
 
 **Model Download**
 - https://drive.google.com/file/d/1xhuBg5zvdtYcTmorcI9HSFXmFLkBvpTC/view?usp=share_link
